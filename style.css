@@ -1,0 +1,95 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87CEEB;
+    background-image: url("https://img.freepik.com/free-photo/beautiful-background-of-white-and-pink-roses_24972-197.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    overflow: hidden;
+}
+
+.text {
+    background: white;
+    width: 90%; /* изменено для мобильных */
+    max-width: 900px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+
+.header_text {
+    font-family: cursive;
+    font-size: 5vw; /* динамический размер текста */
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px; /* уменьшено для мобильных */
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    width: 45%; /* для мобильных, две кнопки занимают по 45% */
+    max-width: 200px;
+    height: 60px;
+    font-size: 20px;
+    background-color: #87CEEB;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #FAF9F6;
+    color: #87CEEB;
+    transform: scale(1.05);
+}
+
+#noButton {
+    position: absolute;
+    transition: 0.3s ease;
+}
+
+.gif_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+img {
+    width: 90%; /* адаптировано для мобильных */
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+/* Медиа-запросы для телефонов */
+@media (max-width: 768px) {
+    .header_text {
+        font-size: 6vw;
+    }
+
+    .btn {
+        width: 100%;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .buttons {
+        gap: 15px;
+    }
+}
